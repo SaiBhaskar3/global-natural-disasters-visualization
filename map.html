@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Map - Global Disasters</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/topojson.v3.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="sunburst.html">Sunburst</a></li>
+      <li><a href="bubble.html">Bubble Pack</a></li>
+    </ul>
+  </nav>
+
+  <div id="filters">
+    <select id="yearFilter">
+      <option value="all">All Years</option>
+    </select>
+    <select id="disasterFilter">
+      <option value="all">All Disaster Types</option>
+    </select>
+  </div>
+
+  <section>
+    <h2>Map View: Total Deaths by Country</h2>
+    <div id="mapChart"></div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    loadPage('map');
+  </script>
+</body>
+</html>
